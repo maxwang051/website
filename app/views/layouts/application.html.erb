@@ -7,6 +7,27 @@
   <%= csrf_meta_tags %>
 </head>
 <body>
+  <div id="sidebar">
+    <div id="logo">
+      <%= link_to root_path do %>
+        <%= image_tag "logo.png" %>
+      <% end %>
+    </div>
+
+    <ul>
+      <li class="category">Website</li>
+      <li><%= link_to "Blog", root_path %></li>
+      <li>About</li>
+    </ul>
+
+    <ul>
+      <li class="category">Social</li>
+      <li><a href="https://twitter.com/max_wang6">Twitter</a></li>
+      <li><a href="https://github.com/maxwang051">GitHub</a></li>
+      <li><a href="https://instagram.com/maximus061/">Instagram</a></li>
+      <li><a href="mailto:maxwang051@gmail.com">Email</a></li>
+    </ul>
+  </div>
 
 <%= yield %>
 
